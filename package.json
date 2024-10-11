@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predev": "node ./src/components/style/generate-theme.js",
+    "no:predev": "node ./src/components/style/generate-theme.js",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",

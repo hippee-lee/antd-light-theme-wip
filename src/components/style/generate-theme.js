@@ -14,7 +14,7 @@ const themeData = JSON.parse(fs.readFileSync(themeFile, 'utf-8'));
 const transformKeys = (obj) => {
   const result = {};
   for (const [key, value] of Object.entries(obj)) {
-    const newKey = key.replace(/\./g, '-');  // Replace '.' in keys to match theme format
+    const newKey = key.replace(/\./g, '');  // Replace '.' in keys to match theme format
     result[newKey] = value;
   }
   return result;
